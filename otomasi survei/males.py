@@ -14,13 +14,14 @@
 
     var jawaban = 'Sangat puas';
     var option = 'Ya';
+    var answer = 'Sangat tidak setuju'
     var Masukan = 'Boleh diterangkan mengenai materi dan memberikan mahasiswa masukan terhadap sumber-sumner materi dari luar kampus';
     var ibdCodes = ['IBD', 'IBR', 'ERW', 'YGO', 'VMD', 'RSC'];
 
-    $('.answerlist1:contains('+jawaban+'), .answerlist1:contains('+option+')').each(function(){
+    $('.answerlist1:contains('+jawaban+'), .answerlist1:contains('+option+'), .answerlist1:contains('+answer+')').each(function(){
         $(this).parent().each(function(){
-            $(this).find('.answerlist2').children().click()
-        })
+            $(this).find('.answerlist2').children().click();
+        });
     });
 
     // Mengisi semua elemen <textarea> dengan tanda "-"
